@@ -1,23 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // List of your actual skills
+document.addEventListener("DOMContentLoaded", () => {
+    // Array representing your technical competencies
     const skills = [
-        'PHP & MySQL', 
-        'HTML5 & CSS3', 
-        'JavaScript (ES6)', 
-        'C Programming', 
-        'C# Basics',
-        'Git & GitHub',
-        'Web Security',
-        'Database Design'
+        "PHP",
+        "MySQL",
+        "JavaScript",
+        "HTML5 / CSS3",
+        "Git & GitHub"
     ];
 
-    const skillContainer = document.getElementById('skill-container');
+    const skillContainer = document.getElementById("skill-container");
 
-    // Create the skill badges dynamically
-    skills.forEach(skill => {
-        const item = document.createElement('div');
-        item.className = 'skill-item';
-        item.innerText = skill;
-        skillContainer.appendChild(item);
-    });
+    if (skillContainer) {
+        // Iterate through the array and inject structural markup
+        skills.forEach(skill => {
+            const skillItem = document.createElement("div");
+            skillItem.classList.add("skill-item");
+            skillItem.textContent = skill;
+            skillContainer.appendChild(skillItem);
+        });
+    }
 });
