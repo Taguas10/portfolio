@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Array representing your technical competencies
+    
     const skills = [
         "PHP",
         "MySQL",
