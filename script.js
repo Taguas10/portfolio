@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const skillContainer = document.getElementById("skill-container");
 
     if (skillContainer) {
-        // Iterate through the array and inject structural markup
+    
         skills.forEach(skill => {
             const skillItem = document.createElement("div");
             skillItem.classList.add("skill-item");
